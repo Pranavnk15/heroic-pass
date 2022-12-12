@@ -1,0 +1,366 @@
+body {
+  font-family: sans-serif;
+}
+.navbar {
+  display: flex;
+  position: fixed;
+  justify-content: center;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  width: 100%;
+  height: 4rem;
+
+}
+.navbar i {
+
+  color: white;
+}
+ .navLeft {
+   display: flex;
+   justify-content: left;
+   padding-left: 300px;
+ }
+/* Color of the links BEFORE scroll */
+.navbar-scroll .nav-link,
+.navbar-scroll .navbar-toggler-icon {
+  color: #0000;
+}
+
+/* Color of the links AFTER scroll */
+.navbar-scrolled .nav-link,
+.navbar-scrolled .navbar-toggler-icon {
+  color: #4f4f4f;
+}
+
+/* Color of the navbar AFTER scroll */
+.navbar-scrolled {
+  background-color: #4f4f4f;
+}
+
+/* An optional height of the navbar AFTER scroll */
+.navbar.navbar-scroll.navbar-scrolled {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.nav-item {
+  padding-left: 3rem;
+  font-size: 1.2rem;
+}
+a:hover {
+  color: aliceblue;
+}
+
+a {
+  display: inline-block;
+  position: relative;
+  color:
+    aliceblue;
+}
+
+a:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color:
+    aliceblue;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+a:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+
+.jumbotron {
+
+  background-image: url("https://www.uworld.com/assets/media/images/large/home-hero-l.jpg");
+
+  align-items: left;
+  height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    color: white;
+}
+
+.descp-img {
+  width: 50%;
+  float: left;
+}
+.descp h2 {
+  font-size: 4vw;
+  padding-bottom: 50px;
+}
+.descp {
+
+
+  background-image: url("https://img.freepik.com/free-photo/serious-thoughtful-man-making-assumption-looking-right-thinking_176420-21174.jpg?w=996&t=st=1668931472~exp=1668932072~hmac=4ba14a362ee40b5feeb0631ae7f1d3476059a90d1f2e583a1d40149953d3f3d6");
+
+  background-repeat: no-repeat;
+  background-size:cover;
+background-color: #00FFF6;
+background-position-y: center;
+
+  background-position: right;
+  padding: 500px 30px 100px 30px;
+  text-overflow: clip;
+  text-align: center;
+  line-height: 1rem;
+  font-family:monospace;
+
+}
+
+/* Features */
+h3 {
+  font-family: Montserrat-bold;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+p {
+  color: #8f8f8f;
+}
+
+#features {
+  padding: 10% 20%;
+  padding-bottom: 5%
+    text-align: center;
+}
+.featuresHeading {
+  padding-top: 30px;
+  align-items: center;
+}
+
+.features-box {
+  text-align: center;
+  padding: 5%;
+}
+.fa-solid {
+  color: blue;
+  margin-bottom: 2rem;
+}
+
+.fa-solid:hover {
+  color:  #009EFF;
+}
+
+.carousel{
+  margin-top: 100px;
+}
+.carousel h3, p{
+  color: #BA94D1;
+  text-align: left;
+}
+.caroursel i{
+  align-items: left;
+}
+.carousel-inner{
+  height: 500px;
+}
+.carousel-caption{
+  color: #fff;
+  font-size: 1.5rem;
+  top: 50%;
+}
+.carousel-control-prev-icon {
+  color:#0014FF;
+}
+
+.contactUS {
+  background-color: #00FFF6;
+  padding: 5%;
+}
+.contactUS p {
+  font-size: 1.5rem;
+}
+
+.footer {
+  background-color: #0000;
+  text-align: center;
+  padding: 3%;
+}
+
+.footer-link {
+  padding: 10px;
+}
+
+.footer-para {
+  font-size: 2rem;
+  font-family: serif;
+  color: black;
+}
+
+/* login */
+button {
+	border-radius: 20px;
+	border: 1px solid #FF4B2B;
+	background-color: #FF4B2B;
+	color: #FFFFFF;
+	font-size: 12px;
+	font-weight: bold;
+	padding: 12px 45px;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	transition: transform 80ms ease-in;
+}
+
+button:active {
+	transform: scale(0.95);
+}
+
+button:focus {
+	outline: none;
+}
+
+button.ghost {
+	background-color: transparent;
+	border-color: #FFFFFF;
+}
+
+form {
+	background-color: #FFFFFF;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	padding: 0 50px;
+	height: 100%;
+	text-align: center;
+}
+
+input {
+	background-color: #eee;
+	border: none;
+	padding: 12px 15px;
+	margin: 8px 0;
+	width: 100%;
+}
+
+.container {
+	background-color: #fff;
+	border-radius: 10px;
+  	box-shadow: 0 14px 28px rgba(0,0,0,0.25),
+			0 10px 10px rgba(0,0,0,0.22);
+	position: relative;
+	overflow: hidden;
+	width: 768px;
+	max-width: 100%;
+	min-height: 480px;
+}
+
+.form-container {
+	position: absolute;
+	top: 0;
+	height: 100%;
+	transition: all 0.6s ease-in-out;
+}
+
+.sign-in-container {
+	left: 0;
+	width: 50%;
+	z-index: 2;
+}
+
+.container.right-panel-active .sign-in-container {
+	transform: translateX(100%);
+}
+
+.sign-up-container {
+	left: 0;
+	width: 50%;
+	opacity: 0;
+	z-index: 1;
+}
+
+.container.right-panel-active .sign-up-container {
+	transform: translateX(100%);
+	opacity: 1;
+	z-index: 5;
+	animation: show 0.6s;
+}
+
+@keyframes show {
+	0%, 49.99% {
+		opacity: 0;
+		z-index: 1;
+	}
+
+	50%, 100% {
+		opacity: 1;
+		z-index: 5;
+	}
+}
+
+.overlay-container {
+	position: absolute;
+	top: 0;
+	left: 50%;
+	width: 50%;
+	height: 100%;
+	overflow: hidden;
+	transition: transform 0.6s ease-in-out;
+	z-index: 100;
+}
+
+.container.right-panel-active .overlay-container{
+	transform: translateX(-100%);
+}
+
+.overlay {
+	background: #A66CFF;
+	background: -webkit-linear-gradient(to right, #6F38C5, #C3F8FF);
+	background: linear-gradient(to right, #6F38C5, #C3F8FF);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: 0 0;
+	color: white;
+	position: relative;
+	left: -100%;
+	height: 100%;
+	width: 200%;
+  	transform: translateX(0);
+	transition: transform 0.6s ease-in-out;
+}
+
+.container.right-panel-active .overlay {
+  	transform: translateX(50%);
+}
+
+.overlay-panel {
+	position: absolute;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	padding: 0 40px;
+	text-align: center;
+	top: 0;
+	height: 100%;
+	width: 50%;
+	transform: translateX(0);
+	transition: transform 0.6s ease-in-out;
+}
+
+.overlay-left {
+	transform: translateX(-20%);
+}
+
+.container.right-panel-active .overlay-left {
+	transform: translateX(0);
+}
+
+.overlay-right {
+	right: 0;
+	transform: translateX(0);
+}
+
+.container.right-panel-active .overlay-right {
+	transform: translateX(20%);
+}
